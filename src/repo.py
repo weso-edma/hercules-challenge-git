@@ -23,9 +23,7 @@ class GitHubRepoData():
             'name': self.name,
             'description': self.description,
             'owner_name': self.owner_name,
-            'languages': '|'.join([f"{language}: {num_bytes}" 
-                                   for language, num_bytes 
-                                   in self.languages]),
+            'languages': self.languages,
             'readme_text': self.readme_text,
             'issues_text': '\n'.join([issue.body for issue in self.issues])
         }

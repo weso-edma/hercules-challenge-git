@@ -33,9 +33,7 @@ def get_repo_contents(author, repo, token):
 def get_repo_languages(languages_url, token):
     response = _make_github_request(languages_url, token)
     response_dict = json.loads(response)
-    return [(language, num_bytes) 
-            for language, num_bytes
-            in response_dict.items()]
+    return response_dict
 
 def get_repo_readme_text(author, repo, token):
     try:
