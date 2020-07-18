@@ -10,7 +10,7 @@ sys.path.append(src_path)
 
 # start logging system and set logging level
 logger = logging.getLogger()
-logger.setLevel(logging.INFO)
+logger.setLevel(logging.WARN)
 logging.info("Starting logger")
 
 DATA_DIR = os.path.join(module_path, 'data')
