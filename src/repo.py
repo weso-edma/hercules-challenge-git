@@ -8,7 +8,8 @@ class GitHubIssue():
 class GitHubRepoData():
     def __init__(self, gh_id, name, description,
                  owner_name, languages, 
-                 readme_text, issues):
+                 readme_text, issues,
+                 commit_messages):
         self.gh_id = gh_id
         self.name = name
         self.description = description
@@ -16,7 +17,8 @@ class GitHubRepoData():
         self.languages = languages
         self.readme_text = readme_text
         self.issues = issues
-    
+        self.commit_messages = commit_messages
+
     def to_dict(self):
         return {
             'gh_id': self.gh_id,
@@ -25,7 +27,8 @@ class GitHubRepoData():
             'owner_name': self.owner_name,
             'languages': self.languages,
             'readme_text': self.readme_text,
-            'issues_text': '\n'.join([issue.body for issue in self.issues])
+            'issues_text': '\n'.join([issue.body for issue in self.issues]),
+            'commits_text': '\n'.join(self.commit_messages)
         }
     
     def __eq__(self, other):

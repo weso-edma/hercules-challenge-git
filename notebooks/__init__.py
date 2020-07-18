@@ -15,3 +15,4 @@ logging.info("Starting logger")
 
 DATA_DIR = os.path.join(module_path, 'data')
 RESULTS_DIR = os.path.join(module_path, 'results')
+NOTEBOOK_1_RESULTS_DIR = os.path.join(RESULTS_DIR, '1_data_fetching')

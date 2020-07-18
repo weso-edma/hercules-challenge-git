@@ -26,6 +26,20 @@ def get_issue_comments(comments_url, token):
     comments_dict = json.loads(comments)
     return [comment['body'] for comment in comments_dict]
 
+def get_repo_commits_messages(author, repo, token):
+    commits_url = f"{GITHUB_BASE_API}/repos/{author}/{repo}/commits"
+    res = []
+    has_next = True
+    while has_next:
+        response = requests.get(commits_url, headers={'Authorization': f"token {token}"})
+        commits = json.loads(response.content)
+        res += [commit['commit']['message'] for commit in commits]
+        if 'next' not in response.links:
+            has_next = False
+        else:
+            commits_url = response.links['next']['url']
+    return res
+
 def get_repo_contents(author, repo, token):
     response = _make_github_request(f"{GITHUB_BASE_API}/repos/{author}/{repo}", token)
     return json.loads(response)
@@ -66,7 +80,8 @@ def parse_repo_url(repo_url, token):
     issues = get_repo_issues(author, repo, token) if repo_contents['has_issues'] else []
     languages = get_repo_languages(repo_contents['languages_url'], token)
     readme_text = get_repo_readme_text(author, repo, token)
+    commit_messages = get_repo_commits_messages(author, repo, token)
     return GitHubRepoData(repo_contents['id'], repo_contents['name'],
         repo_contents['description'], repo_contents['owner']['login'],
-        languages, readme_text, issues)
+        languages, readme_text, issues, commit_messages)
 
