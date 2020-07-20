@@ -5,6 +5,7 @@ from requests.exceptions import HTTPError
 
 from bs4 import BeautifulSoup
 
+from .code_analyser import get_source_code_comments
 from .repo import GitHubIssue, GitHubRepoData
 
 
@@ -25,6 +26,12 @@ def get_issue_comments(comments_url, token):
     comments = _make_github_request(comments_url, token)
     comments_dict = json.loads(comments)
     return [comment['body'] for comment in comments_dict]
+
+def get_repo_comments(author, repo, token):
+    tarball_url = f"{GITHUB_BASE_API}/repos/{author}/{repo}/tarball"
+    tarball_contents = _make_github_request(tarball_url, token)
+    license_filter = lambda c: 'license' not in c.text().lower() and 'copyright' not in c.text().lower()
+    return get_source_code_comments(tarball_contents, filters=[license_filter])
 
 def get_repo_commits_messages(author, repo, token):
     commits_url = f"{GITHUB_BASE_API}/repos/{author}/{repo}/commits"
@@ -81,7 +88,8 @@ def parse_repo_url(repo_url, token):
     languages = get_repo_languages(repo_contents['languages_url'], token)
     readme_text = get_repo_readme_text(author, repo, token)
     commit_messages = get_repo_commits_messages(author, repo, token)
+    comments = get_repo_comments(author, repo, token)
     return GitHubRepoData(repo_contents['id'], repo_contents['name'],
         repo_contents['description'], repo_contents['owner']['login'],
-        languages, readme_text, issues, commit_messages)
+        languages, readme_text, issues, commit_messages, comments)
 

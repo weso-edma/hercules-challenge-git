@@ -9,7 +9,7 @@ class GitHubRepoData():
     def __init__(self, gh_id, name, description,
                  owner_name, languages, 
                  readme_text, issues,
-                 commit_messages):
+                 commit_messages, source_code_comments):
         self.gh_id = gh_id
         self.name = name
         self.description = description
@@ -18,6 +18,7 @@ class GitHubRepoData():
         self.readme_text = readme_text
         self.issues = issues
         self.commit_messages = commit_messages
+        self.source_code_comments = source_code_comments
 
     def to_dict(self):
         return {
@@ -28,7 +29,8 @@ class GitHubRepoData():
             'languages': self.languages,
             'readme_text': self.readme_text,
             'issues_text': '\n'.join([issue.body for issue in self.issues]),
-            'commits_text': '\n'.join(self.commit_messages)
+            'commits_text': '\n'.join(self.commit_messages),
+            'comments_text': '\n'.join(self.source_code_comments)
         }
     
     def __eq__(self, other):
