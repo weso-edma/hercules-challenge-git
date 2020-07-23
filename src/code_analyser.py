@@ -1,3 +1,4 @@
+import re
 import tarfile
 import tempfile
 
@@ -20,13 +21,16 @@ FILE_EXTENSIONS_TO_MIME = {
 
 
 def get_source_code_comments(repo_content, filters=None):
+    """ Return a dict with the comments of each source file in the repo.
+    """
     filters = [] if filters is None else filters
-    comments = []
+    comments = dict()
     with tempfile.TemporaryFile(suffix='.tar.gz') as content_f:
         content_f.write(repo_content)
         content_f.seek(0)
         with tarfile.open(fileobj=content_f, mode='r:gz') as tar:
             for member in tar.getmembers():
+                member_comments = []
                 if member.isdir():
                     continue
                 
@@ -40,9 +44,23 @@ def get_source_code_comments(repo_content, filters=None):
                     mime = FILE_EXTENSIONS_TO_MIME[file_extension]
                     try:
                         file_comments = comment_parser.extract_comments_from_str(inner_f.read().decode('utf-8'), mime=mime)
-                        comments += file_comments
+                        member_comments += file_comments
                     except:
                         print(member.name)
-    for f in filters:
-        comments = filter(f, comments)
-    return [c.text() for c in comments if c.is_multiline()]
+                file_name = _extract_file_name(member.name)
+                comments[file_name] = member_comments
+    for key in comments.keys():
+        for f in filters:
+            comments[key] = filter(f, comments[key])
+        comments[key] = [c.text().strip() for c in comments[key] if c.is_multiline()]
+    return comments
+
+def _extract_file_name(path):
+    tokens = path.split('/')
+    filename = tokens[-1]
+    filename_no_extension = ' '.join(filename.split('.')[:-1]) # its better this? -> f.split('.')[0]
+    filename_no_snake = filename_no_extension.replace('_', ' ')
+    filename_no_dash = filename_no_snake.replace('-', ' ')
+    filename_final = re.sub("([a-z])([A-Z])","\g<1> \g<2>",
+                            filename_no_dash)
+    return filename_final

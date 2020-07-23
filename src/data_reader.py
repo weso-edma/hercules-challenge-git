@@ -116,7 +116,11 @@ def parse_repo_url(repo_url, token):
     readme_text = get_repo_readme_text(author, repo, token)
     commit_messages = get_repo_commits_messages(author, repo, token)
     comments = get_repo_comments(author, repo, token)
+    filenames = comments.keys()
+    comments_text = [single_comment 
+                     for file_comments in comments.values()
+                     for single_comment in file_comments]
     return GitHubRepoData(repo_contents['id'], repo_contents['name'],
         repo_contents['description'], repo_contents['owner']['login'],
-        languages, readme_text, issues, commit_messages, comments)
+        languages, readme_text, issues, commit_messages, filenames, comments_text)
 
