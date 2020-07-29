@@ -64,6 +64,12 @@ def get_repo_languages(languages_url, token):
     response_dict = json.loads(response)
     return response_dict
 
+docker container create --name doccano \
+  -e "ADMIN_USERNAME=Weso" \
+  -e "ADMIN_EMAIL=weso.researchgroup@gmail.com" \
+  -e "ADMIN_PASSWORD=WeSo12345/" \
+  -p 8000:8000 doccano/doccano
+
 def get_repo_readme_text(author, repo, token):
     try:
         res = _make_github_request(f"{GITHUB_BASE_API}/repos/{author}/{repo}/readme", token)
@@ -77,8 +83,6 @@ def get_repo_readme_text(author, repo, token):
     soup = BeautifulSoup(readme_html, 'lxml')
     readme_element = soup.find('div', {'id': 'readme'})
     if readme_element is None:
-        # readme.txt file
-        print(author, repo)
         readme_element = soup.find('div', {'itemprop': 'text'})
         return readme_element.text.strip()
     else:
