@@ -1,0 +1,351 @@
+gh_id,name,topics_from_ner
+216602979,LIRICAL,"software, 0.2150
+computer science, 0.2115
+artificial intelligence, 0.2085
+interaction science, 0.2084
+engineering, 0.2062
+automation, 0.2052
+mathematical analysis, 0.2044"
+199330464,wikidata_ontomatcher,"Wikidata, 0.4091
+online database, 0.3375
+knowledge base, 0.3361
+semantic wiki, 0.3140
+knowledge graph, 0.3140
+Linked Open Data cloud diagram, 0.3092
+Semantic Web, 0.3068"
+253207181,ro-crate-ruby,"information, 0.2005
+abstract object, 0.1957
+advertising, 0.1903
+data, 0.1893
+creative work, 0.1820
+message, 0.1808
+level, 0.1808"
+212556220,Misc_Training_scripts,"species, 0.6111
+taxonomic rank, 0.5116
+subgenus, 0.4889
+rank, 0.4681
+subseries, 0.4583
+rank, 0.4490
+population, 0.4490"
+155879756,FAIRifier,"software, 0.2099
+interaction science, 0.2051
+economics, 0.1996
+social science, 0.1994
+communication medium, 0.1972
+science, 0.1969
+philosophy, 0.1966"
+90349931,elda,"branch of science, 0.2024
+construction, 0.2010
+specialty, 0.1959
+music, 0.1950
+occupation, 0.1932
+cartography, 0.1931
+education, 0.1930"
+126633812,music-genre-classification,"mass media, 0.1933
+machine learning, 0.1924
+computer science, 0.1912
+specialty, 0.1888
+artificial intelligence, 0.1863
+music, 0.1846
+study of history, 0.1769"
+173520377,probabilistic_nlg,"statistics, 0.2109
+mathematics, 0.2084
+stochastic, 0.1943
+formal science, 0.1931
+science, 0.1881
+data, 0.1880
+algorithm, 0.1879"
+103798851,DataStructures-Algorithms-InC,"mathematics, 0.2703
+algorithm, 0.2583
+mathematical object, 0.2548
+formal science, 0.2360
+number, 0.2337
+mathematical concept, 0.2325
+computer science, 0.2291"
+153249816,Music-Generation-Using-Deep-Learning,"mathematics, 0.2460
+software, 0.2438
+machine learning, 0.2429
+specialty, 0.2417
+music, 0.2411
+library science, 0.2410
+automation, 0.2389"
+170129937,evaluomeR,"data, 0.2304
+statistics, 0.2281
+database, 0.2170
+mathematics, 0.2146
+abstract object, 0.2146
+concept, 0.2127
+information, 0.2081"
+57412597,hemodonacion,"mathematics, 0.2050
+protein, 0.2043
+science, 0.2042
+genetics, 0.1990
+statistics, 0.1983
+computer science, 0.1962
+cell biology, 0.1960"
+46532803,DnaCompress,"mathematics, 0.2661
+information science, 0.2624
+computer science, 0.2555
+software, 0.2533
+algorithm, 0.2484
+computer, 0.2382
+work, 0.2320"
+95547920,trackhub-creator,"software, 0.2088
+economics, 0.2069
+philosophy, 0.2049
+statistics, 0.2032
+service, 0.2007
+logic, 0.1985
+sport, 0.1967"
+94098106,libpogo,"library science, 0.2033
+library, 0.1925
+software, 0.1835
+information science, 0.1822
+collection, 0.1761
+computer programming, 0.1745
+document, 0.1735"
+83849237,vimrc,"nerd, 0.5909
+pejorative, 0.5000
+character type, 0.4643
+reappropriation, 0.4333
+Category:Nerds, 0.3824
+Category:Pejoratives, 0.3421
+term, 0.3421"
+83414669,cpp-playground,"teaching, 0.3762
+materials science, 0.3689
+base material, 0.3115
+information transfer, 0.3016
+concept, 0.2969
+activity, 0.2836
+Category:Academic disciplines, 0.2815"
+56680034,genenetwork2,"software, 0.2173
+work, 0.1988
+sport, 0.1983
+statistics, 0.1972
+mass media, 0.1965
+written work, 0.1962
+database, 0.1950"
+231038084,MPCC,"library, 0.1979
+collection, 0.1934
+work, 0.1931
+library science, 0.1890
+algorithm, 0.1810
+cultural institution, 0.1776
+database, 0.1766"
+14387064,pubannotation,"software, 0.2304
+sociology, 0.2244
+creative work, 0.2199
+modding, 0.2153
+work, 0.2143
+social science, 0.2129
+do it yourself, 0.2085"
+212904362,UniMath,"social science, 0.1755
+information science, 0.1748
+property, 0.1739
+information, 0.1727
+statistics, 0.1718
+mathematics, 0.1715
+area of mathematics, 0.1710"
+113264497,neo4j-to-reasoner,"imatinib, 0.5500
+carbon, 0.4459
+chemical compound, 0.4342
+medication, 0.4177
+nitrogen, 0.4125
+tyrosine-kinase inhibitor, 0.3976
+essential medicine, 0.3882"
+260889871,dl-reasoner,"mathematics, 0.2021
+philosophy, 0.1912
+natural language processing, 0.1896
+library science, 0.1887
+information science, 0.1882
+computer science, 0.1867
+sport, 0.1830"
+161862375,biohack18,"plant, 0.5455
+botany, 0.4865
+plant genetics, 0.4320
+organism, 0.4154
+root, 0.3803
+biology, 0.3803
+taxon, 0.3750"
+171842501,biosample_jsonld,"science, 0.2323
+branch of science, 0.2309
+information science, 0.2286
+natural science, 0.2279
+work, 0.2250
+biology, 0.2231
+information, 0.2138"
+257154635,bh20-seq-resource,"project, 0.2032
+concept, 0.1993
+activity, 0.1972
+GNU Project, 0.1924
+automation, 0.1893
+series, 0.1882
+occupation, 0.1876"
+260966843,odgi,"software, 0.2207
+mathematics, 0.2193
+computer science, 0.2127
+statistics, 0.2109
+economics, 0.2085
+graph theory, 0.2081
+mass media, 0.2066"
+257545116,arvados,"software, 0.2050
+science, 0.2032
+work, 0.2011
+concept, 0.1995
+governance, 0.1981
+philosophy, 0.1971
+automation, 0.1967"
+150747903,termite_toolkit,"protein, 0.4350
+BRCA1 DNA repair associated, 0.4236
+Zinc finger, RING-type, 0.3489
+Breast cancer type 1 susceptibility protein (BRCA1), 0.3368
+Zinc finger, RING-type, conserved site, 0.3333
+Zinc finger, C3HC4 RING-type, 0.3322
+BRCT domain, 0.3201"
+151696606,JavaTermiteStarter,"text, 0.3010
+written work, 0.2980
+text corpus, 0.2695
+work, 0.2671
+software, 0.2632
+collection, 0.2609
+creative work, 0.2521"
+126086017,cwltool,"software, 0.2051
+interaction science, 0.1940
+construction, 0.1921
+computer science, 0.1919
+automation, 0.1907
+creative work, 0.1906
+mathematics, 0.1904"
+150911020,cwl-tes-temp,"software, 0.2645
+Google Compute Engine, 0.2481
+Google Cloud Platform, 0.2256
+written work, 0.2241
+run-time system, 0.2226
+application, 0.2171
+computer, 0.2155"
+83817036,mmtf-cpp,"abstract object, 0.1857
+system, 0.1830
+library science, 0.1802
+information, 0.1774
+systems engineering, 0.1766
+cybernetics, 0.1744
+document, 0.1741"
+254755549,covid-19-Annotations-on-Structures,"branch of science, 0.2148
+protein, 0.2050
+biology, 0.2018
+science, 0.2017
+type of map, 0.1965
+chemical substance, 0.1961
+cosmology, 0.1947"
+3103186,php-lib,"currency, 0.8750
+peso, 0.6364
+Philippine peso, 0.5833
+medium of exchange, 0.5000
+unit of measurement, 0.5000
+money, 0.5000
+Category:Currency, 0.5000"
+3103225,bio2rdf-scripts,"chemistry, 0.1827
+branch of science, 0.1819
+materials science, 0.1818
+software, 0.1798
+biology, 0.1770
+property, 0.1672
+information science, 0.1658"
+22713247,aida,"publication, 0.2012
+mass media, 0.2005
+communication medium, 0.1970
+work, 0.1937
+language, 0.1921
+linguistics, 0.1913
+article, 0.1839"
+21820701,memetools,"catalogue, 0.2814
+communication medium, 0.2701
+publication, 0.2693
+mass media, 0.2686
+written work, 0.2678
+information, 0.2655
+work, 0.2640"
+34799405,owlapi,"concept, 0.1920
+politics, 0.1910
+software, 0.1870
+interaction science, 0.1869
+metaclass, 0.1860
+classification system, 0.1852
+work, 0.1846"
+42526998,pythonontologysearch,"motor car, 0.5783
+dashboard, 0.5217
+control panel, 0.3967
+user interface, 0.3721
+motor vehicle, 0.3692
+engine, 0.3692
+steering wheel, 0.3692"
+238953196,my-react-form,"activity, 0.1601
+design, 0.1538
+project, 0.1525
+series, 0.1500
+action, 0.1480
+specialty, 0.1477
+concept, 0.1473"
+157134523,python-ecology-lesson-es-1,"Python, 0.1212
+run-time system, 0.1184
+software development, 0.1163
+computing platform, 0.1155
+machine learning, 0.1150
+forge, 0.1128
+integrated development environment, 0.1127"
+193684604,opengovernment,"software, 0.2172
+library science, 0.2055
+document, 0.2047
+construction, 0.2044
+written work, 0.2041
+area of mathematics, 0.2024
+anthropology, 0.2012"
+33901216,bioscholar-v1.0,"database, 0.1703
+photo library, 0.1690
+archives, 0.1688
+preservation, 0.1640
+digital library, 0.1638
+library, 0.1631
+work, 0.1630"
+13978110,ProvToolbox,"interaction science, 0.1876
+human, 0.1824
+mass media, 0.1820
+anthropology, 0.1813
+communication medium, 0.1806
+social science, 0.1786
+magazine, 0.1769"
+258719463,x-spreadsheet,"interaction science, 0.1731
+concept, 0.1687
+entity, 0.1674
+communication, 0.1652
+mathematics, 0.1648
+communication studies, 0.1641
+mathematical concept, 0.1636"
+113915480,expert-pancake-aspnetcoreapp,"website, 0.4545
+creative work, 0.3691
+web page, 0.3595
+digital media, 0.3526
+World Wide Web, 0.3526
+online publication, 0.3503
+communication medium, 0.3459"
+223272173,generalizability,"information, 0.3256
+message, 0.3164
+letter, 0.3011
+abstract object, 0.2963
+sign, 0.2887
+data, 0.2887
+communication medium, 0.2759"
+248895581,Data-Science--Cheat-Sheet,"computer science, 0.2474
+natural language processing, 0.2396
+artificial intelligence, 0.2373
+machine learning, 0.2369
+software, 0.2333
+statistics, 0.2332
+mathematics, 0.2271"
+223627473,Basketball_Analytics,"statistics, 0.1806
+mathematical analysis, 0.1773
+mathematics, 0.1756
+education, 0.1719
+software, 0.1719
+taxon, 0.1714
+pure mathematics, 0.1702"
