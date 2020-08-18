@@ -1,0 +1,367 @@
+gh_id,name,topics,Topics Predicted,max similarity,min similarity,mean similarity,median similarity
+216602979,LIRICAL,"Java
+diagnosis","computer science
+software
+artificial intelligence
+interaction science
+engineering
+automation
+statistics",1.4403615823901665,1.072636802264849,1.2564991923275077,1.2564991923275077
+199330464,wikidata_ontomatcher,Prolog,"Wikidata
+online database
+knowledge base
+knowledge graph
+semantic wiki
+Linked Open Data cloud diagram
+Semantic Web",1.3350010667323402,1.3350010667323402,1.3350010667323402,1.3350010667323402
+253207181,ro-crate-ruby,Ruby,"information
+abstract object
+advertising
+data
+creative work
+level
+message",1.072636802264849,1.072636802264849,1.072636802264849,1.072636802264849
+212556220,Misc_Training_scripts,database,"species
+taxonomic rank
+subgenus
+rank
+subseries
+rank
+population",1.55814461804655,1.55814461804655,1.55814461804655,1.55814461804655
+90349931,elda,Java,"document
+branch of science
+construction
+specialty
+occupation
+education
+cartography",1.2396908869280152,1.2396908869280152,1.2396908869280152,1.2396908869280152
+126633812,music-genre-classification,"music
+classification","mass media
+machine learning
+computer science
+specialty
+artificial intelligence
+art
+musicology",1.6916760106710724,1.55814461804655,1.6249103143588113,1.6249103143588113
+173520377,probabilistic_nlg,Python,"statistics
+mathematics
+stochastic
+formal science
+automation
+science
+statistical method",0.5465437063680699,0.5465437063680699,0.5465437063680699,0.5465437063680699
+103798851,DataStructures-Algorithms-InC,"Algorithms
+C","mathematics
+algorithm
+mathematical object
+formal science
+number
+mathematical concept
+computer science",3.6375861597263857,1.1526795099383855,2.3951328348323857,2.3951328348323857
+153249816,Music-Generation-Using-Deep-Learning,Python,"mathematics
+architecture
+software
+specialty
+library science
+machine learning
+automation",0.8649974374866046,0.8649974374866046,0.8649974374866046,0.8649974374866046
+170129937,evaluomeR,"evaluation
+R","statistics
+data
+mathematics
+database
+concept
+abstract object
+edition philology",1.4403615823901665,1.3350010667323402,1.3876813245612534,1.3876813245612534
+57412597,hemodonacion,R,"mathematics
+science
+protein
+genetics
+statistics
+computer science
+mass media",1.072636802264849,1.072636802264849,1.072636802264849,1.072636802264849
+46532803,DnaCompress,"DNA
+C","mathematics
+information science
+computer science
+software
+algorithm
+computer
+work",1.1526795099383855,0.9985288301111273,1.0756041700247563,1.0756041700247563
+95547920,trackhub-creator,Python,"software
+economics
+philosophy
+service
+statistics
+logic
+business",0.5930637220029626,0.5930637220029626,0.5930637220029626,0.5930637220029626
+94098106,libpogo,Java,"library science
+library
+document
+information science
+software
+special collections
+specialty",1.3350010667323402,1.3350010667323402,1.3350010667323402,1.3350010667323402
+83849237,vimrc,vim,"nerd
+pejorative
+character type
+reappropriation
+Category:Nerds
+term
+Category:Pejoratives",1.1526795099383855,1.1526795099383855,1.1526795099383855,1.1526795099383855
+83414669,cpp-playground,teaching,"teaching
+materials science
+base material
+information transfer
+concept
+activity
+specialty",3.6375861597263857,3.6375861597263857,3.6375861597263857,3.6375861597263857
+56680034,genenetwork2,"Python
+genetics","software
+work
+database
+sport
+Database theory
+mass media
+written work",0.9985288301111273,0.6418538861723948,0.820191358141761,0.820191358141761
+231038084,MPCC,"correlation
+R","library science
+library
+work
+mathematics
+algorithm
+computer science
+information science",1.4403615823901665,1.1526795099383855,1.2965205461642761,1.2965205461642761
+14387064,pubannotation,Ruby,"software
+sociology
+creative work
+modding
+work
+social science
+do it yourself",0.8649974374866046,0.8649974374866046,0.8649974374866046,0.8649974374866046
+212904362,UniMath,mathematics,"mathematics
+area of mathematics
+social science
+statistics
+information science
+property
+biology",3.6375861597263857,3.6375861597263857,3.6375861597263857,3.6375861597263857
+113264497,neo4j-to-reasoner,reasoner,"imatinib
+carbon
+chemical compound
+medication
+nitrogen
+tyrosine-kinase inhibitor
+essential medicine",1.55814461804655,1.55814461804655,1.55814461804655,1.55814461804655
+260889871,dl-reasoner,"Rust
+algorithms","mathematics
+philosophy
+library science
+information science
+natural language processing
+computer science
+sport",1.845826690498331,0.9295359586241757,1.3876813245612534,1.3876813245612534
+161862375,biohack18,"proteins
+Groovy
+plots
+plants","plant
+botany
+plant genetics
+organism
+biology
+root
+taxon",3.6375861597263857,1.1526795099383855,2.041755578799037,1.3350010667323402
+171842501,biosample_jsonld,"docker
+Ruby","Database theory
+database
+biology
+science
+branch of science
+information science
+natural science",0.9985288301111273,0.9295359586241757,0.9640323943676514,0.9640323943676514
+257154635,bh20-seq-resource,"Python
+HTML","project
+activity
+concept
+GNU Project
+automation
+series
+occupation",1.1526795099383855,0.6418538861723948,0.8972666980553902,0.8972666980553902
+260966843,odgi,"graphs
+genome","software
+mathematics
+computer science
+statistics
+graph theory
+economics
+artificial intelligence",1.55814461804655,1.2396908869280152,1.3989177524872827,1.3989177524872827
+257545116,arvados,"biomedicine
+Docker","software
+science
+work
+concept
+governance
+philosophy
+automation",1.845826690498331,0.9985288301111273,1.422177760304729,1.422177760304729
+150747903,termite_toolkit,"Python
+TERMite","protein
+BRCA1 DNA repair associated
+Zinc finger, RING-type
+Breast cancer type 1 susceptibility protein (BRCA1)
+Zinc finger, RING-type, conserved site
+Zinc finger, C3HC4 RING-type
+Zinc finger, RING-type, protein family",0.9295359586241757,0.9295359586241757,0.9295359586241757,0.9295359586241757
+151696606,JavaTermiteStarter,"Termite
+Java","text
+written work
+text corpus
+work
+software
+collection
+creative work",1.4403615823901665,0.9985288301111273,1.219445206250647,1.219445206250647
+126086017,cwltool,Python,"software
+interaction science
+computer science
+construction
+automation
+mathematics
+library science",0.5465437063680699,0.5465437063680699,0.5465437063680699,0.5465437063680699
+150911020,cwl-tes-temp,Python,"software
+Google Compute Engine
+Google Cloud Platform
+written work
+run-time system
+application
+computer",0.8043728156701697,0.8043728156701697,0.8043728156701697,0.8043728156701697
+254755549,covid-19-Annotations-on-Structures,"Python
+annotation","branch of science
+science
+biology
+protein
+statistics
+cosmology
+occupation",1.2396908869280152,0.6931471805599453,0.9664190337439802,0.9664190337439802
+3103186,php-lib,libraries,"currency
+peso
+Philippine peso
+Category:Currency
+money
+unit of measurement
+medium of exchange",1.072636802264849,1.072636802264849,1.072636802264849,1.072636802264849
+3103225,bio2rdf-scripts,Java,"chemistry
+branch of science
+materials science
+software
+biology
+property
+chemical compound",1.3350010667323402,1.3350010667323402,1.3350010667323402,1.3350010667323402
+22713247,aida,"Shell
+English","publication
+mass media
+linguistics
+article
+software
+written work
+work",1.55814461804655,1.1526795099383855,1.3554120639924676,1.3554120639924676
+21820701,memetools,"Java
+score","catalogue
+communication medium
+publication
+mass media
+written work
+work
+information",1.3350010667323402,1.1526795099383855,1.2438402883353628,1.2438402883353628
+34799405,owlapi,"Java
+OWL","concept
+politics
+library science
+interaction science
+communication medium
+classification system
+work",1.3350010667323402,0.8649974374866046,1.0999992521094724,1.0999992521094724
+42526998,pythonontologysearch,"Python
+ontology
+searching","motor car
+dashboard
+control panel
+user interface
+steering wheel
+engine
+motor vehicle",0.9985288301111273,0.8649974374866046,0.9317631337988659,0.9317631337988659
+238953196,my-react-form,"forms
+React
+demo","activity
+design
+project
+series
+action
+concept
+specialty",1.55814461804655,1.3350010667323402,1.446572842389445,1.446572842389445
+157134523,python-ecology-lesson-es-1,"Python
+teaching","Python
+run-time system
+software development
+computing platform
+machine learning
+integrated development environment
+forge",3.6375861597263857,0.6418538861723948,2.1397200229493905,2.1397200229493905
+193684604,opengovernment,Ruby,"software
+construction
+library science
+anthropology
+engineering
+area of mathematics
+document",0.9295359586241757,0.9295359586241757,0.9295359586241757,0.9295359586241757
+33901216,bioscholar-v1.0,reasoning,"database
+photo library
+archives
+digital library
+preservation
+work
+library",1.3350010667323402,1.3350010667323402,1.3350010667323402,1.3350010667323402
+13978110,ProvToolbox,Java,"interaction science
+human
+mass media
+anthropology
+communication medium
+social science
+magazine",1.2396908869280152,1.2396908869280152,1.2396908869280152,1.2396908869280152
+258719463,x-spreadsheet,"spreadsheet
+web","interaction science
+concept
+entity
+communication
+mathematics
+communication studies
+mathematical concept",2.2512917986064953,1.3350010667323402,1.7931464326694178,1.7931464326694178
+113915480,expert-pancake-aspnetcoreapp,ASP,"website
+creative work
+web page
+World Wide Web
+digital media
+online publication
+communication medium",0.8043728156701697,0.8043728156701697,0.8043728156701697,0.8043728156701697
+223272173,generalizability,"Python
+psychology
+generalization","information
+message
+letter
+abstract object
+data
+sign
+communication medium",1.3350010667323402,0.8043728156701697,1.126354923110175,1.2396908869280152
+248895581,Data-Science--Cheat-Sheet,tools,"computer science
+natural language processing
+machine learning
+artificial intelligence
+software
+statistics
+mathematics",0.9295359586241757,0.9295359586241757,0.9295359586241757,0.9295359586241757
+223627473,Basketball_Analytics,"Python
+basketball","statistics
+mathematical analysis
+mathematics
+education
+software
+taxon
+pure mathematics",1.845826690498331,0.6931471805599453,1.269486935529138,1.269486935529138

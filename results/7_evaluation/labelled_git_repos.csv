@@ -1,0 +1,51 @@
+repo_url;topics
+https://github.com/cmungall/LIRICAL/;Java, diagnosis, human phenotype
+https://github.com/cmungall/wikidata_ontomatcher;Prolog, Wikidata, ontology matching
+https://github.com/markwilkinson/ro-crate-ruby;Ruby, RO Crate, Research Objects
+https://github.com/markwilkinson/Misc_Training_scripts;database
+https://github.com/mikel-egana-aranguren/FAIRifier;FAIR data, OpenRefine
+https://github.com/mikel-egana-aranguren/elda;Java,  Linked Data API
+https://github.com/HareeshBahuleyan/music-genre-classification;Python Jupyter Notebook, music, classification, machine learning
+https://github.com/HareeshBahuleyan/probabilistic_nlg;Python, Probabilistic Sentence Generation, machine learning
+https://github.com/gauravtheP/DataStructures-Algorithms-InC;C, Algorithms
+https://github.com/gauravtheP/Music-Generation-Using-Deep-Learning;Python, Jupyter Notebook, Automatic music generation, deep learning
+https://github.com/neobernad/evaluomeR;R, bioinformatic metrics, evaluation
+https://github.com/fanavarro/hemodonacion;Perl, R, human genome, bioinformatics
+https://github.com/fanavarro/DnaCompress;C, DNA, data compression
+https://github.com/Proteogenomics/trackhub-creator;Python, track hub
+https://github.com/Proteogenomics/libpogo/;Java, POGO, bioinformatics
+https://github.com/mbdebian/vimrc;vim, vimrc, coniguration
+https://github.com/mbdebian/cpp-playground;c++, teaching
+https://github.com/pjotrp/genenetwork2;Python, Javascript, genetics
+https://github.com/pjotrp/MPCC;R, Pearsons, correlation
+https://github.com/jdkim/pubannotation;Ruby,  literature anotation
+https://github.com/NuriaQueralt/UniMath;Coq, mathematics, univalent foundations
+https://github.com/NuriaQueralt/neo4j-to-reasoner;Javascript, neo4j, NCATS, reasoner
+https://github.com/leechuck/dl-reasoner;Rust, ALCQ, description logic, algorithms
+https://github.com/leechuck/biohack18;Groovy, BioHackaton, plots, proteins, plants
+https://github.com/inutano/biosample_jsonld;Ruby, docker, biological database, JSON-LD
+https://github.com/inutano/bh20-seq-resource;Python, HTML, Biohackaton, COVID-19, SARS-CoV-2, uploader
+https://github.com/mr-c/odgi;C++,  graphs, memory management, genome
+https://github.com/mr-c/arvados;Docker, biomedicine, data management, data procesing, data sharing
+https://github.com/SciBiteLabs/termite_toolkit;Python, Jupyter notebook,  TERMite, TExpressm, DOCstore
+https://github.com/SciBiteLabs/JavaTermiteStarter;Java, Termite
+https://github.com/uniqueg/cwltool;Python, Common Workflow Language
+https://github.com/uniqueg/cwl-tes-temp;Python,  GA4GH, task submission
+https://github.com/gtauriello/mmtf-cpp;C++, bioinformatics, MMFT
+https://github.com/gtauriello/covid-19-Annotations-on-Structures;Python, BioHackaton, COVID-19, annotation
+https://github.com/micheldumontier/php-lib;PHP, libraries, semantic web
+https://github.com/micheldumontier/bio2rdf-scripts;Java, PHP, BIO2RDF, semantic web
+https://github.com/tkuhn/aida;Shell, language structure, English
+https://github.com/tkuhn/memetools;Java, scientific meme, score
+https://github.com/jamesmalone/owlapi;Java, OWL, semantic web
+https://github.com/jamesmalone/pythonontologysearch;Python, javascript, ontology, searching
+https://github.com/twhetzel/my-react-form;JavaScript, React, Formik, Material-UI, forms, demo
+https://github.com/agbeltran/python-ecology-lesson-es-1;Python, teaching, data carpentry
+https://github.com/agbeltran/opengovernment;Ruby, Open Government,
+https://github.com/GullyAPCBurns/bioscholar-v1.0;Web application, Common Lisp, Action Script, knowledge engineering, reasoning
+https://github.com/GullyAPCBurns/ProvToolbox;Java, data provenance
+https://github.com/be-sanders/x-spreadsheet;JavaScript, spreadsheet, web
+https://github.com/be-sanders/expert-pancake-aspnetcoreapp;C#, ASP, .NET
+https://github.com/tyarkoni/generalizability;Python, Jupyter notebook, generalization, psychology
+https://github.com/pauldevos/Data-Science--Cheat-Sheet;PDF, cheatsheet, data science, tools
+https://github.com/pauldevos/Basketball_Analytics;Python, Jupyter notebook, basketball, analytics
