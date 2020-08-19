@@ -143,6 +143,8 @@ cython_debug/
 # :) :) :) :) :)
 .DS_Store
 .nosync
+*.pkl
+!git_dataframe.pkl
 
 # secret tokens
 notebooks/secret.py
