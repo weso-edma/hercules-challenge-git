@@ -1,0 +1,6 @@
+https://github.com/cmungall/LIRICAL/
+https://github.com/cmungall/wikidata_ontomatcher
+https://github.com/markwilkinson/ro-crate-ruby
+https://github.com/markwilkinson/Misc_Training_scripts
+https://github.com/mikel-egana-aranguren/FAIRifier
+https://github.com/mikel-egana-aranguren/elda
