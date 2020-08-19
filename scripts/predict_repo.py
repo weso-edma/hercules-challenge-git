@@ -1,11 +1,21 @@
 import argparse
 import logging
 import pickle
+import os
 import re
+import sys
 
 import pandas as pd
 
-from .common import GIT_FILE_PATH, load_final_pipe, show_results
+from common import GIT_FILE_PATH, OUTPUT_FORMATS, load_final_pipe, show_results
+
+parentdir = os.path.dirname('..')
+sys.path.insert(0,parentdir)
+from src import parse_repo_url
+
+
+logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger(__name__)
 
 def clean(text):
     return re.sub('\s+', ' ', text).strip()
@@ -27,11 +37,11 @@ def load_repos_df(input, is_file, token):
 
 def parseargs():
     parser = argparse.ArgumentParser(description="Run predictions for the Git track dataset")
-    parser.add_argument('input', type=str, nargs='1', help="Url of the GitHub repository to extract " +
+    parser.add_argument('input', type=str, help="Url of the GitHub repository to extract " +
         "the topics from. If the --file flag is set, file with the urls of the GitHub repositories.")
-    parser.add_argument('--token', type=str, nargs='1', help="GitHub token used to fetch information about " +
+    parser.add_argument('--token', type=str, required=True, help="GitHub token used to fetch information about " +
         "the input repositories before the topic extraction steps.")
-    parser.add_argument('--file', action='store_true', default=False, help="If present, this flag " +
+    parser.add_argument('--isFile', action='store_true', default=False, help="If present, this flag " +
         "indicates that the input passed to the script is a file with the urls of each repository " +
         "delimited by newlines.")
     parser.add_argument('-f', '--format', choices=OUTPUT_FORMATS, help="Output format of the results. " +
@@ -44,7 +54,7 @@ def parseargs():
 
 def main(args):
     logger.info('Loading repository data...')
-    git_df = load_repos_df(args.input, args.file)
+    git_df = load_repos_df(args.input, args.isFile, args.token)
     logger.info('Loading topic extraction model...')
     final_pipe = load_final_pipe()
     repos = git_df['full_text_cleaned'].values
