@@ -144,8 +144,5 @@ cython_debug/
 .DS_Store
 .nosync
 
-# ignore pickled files for now
-*.pkl
-
 # secret tokens
 notebooks/secret.py
