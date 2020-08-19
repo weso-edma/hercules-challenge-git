@@ -2,6 +2,7 @@ import csv
 import joblib
 import json
 import os
+import sys
 
 from rdflib import BNode, Graph, Literal, Namespace, URIRef
 from rdflib.namespace import RDF, RDFS
@@ -15,7 +16,7 @@ NOTEBOOK_6_RESULTS_DIR = os.path.join(RESULTS_DIR, '6_complete_system')
 GIT_FILE_PATH = os.path.join(NOTEBOOK_1_RESULTS_DIR, 'git_dataframe.pkl')
 FINAL_PIPE_FILE_PATH = os.path.join(NOTEBOOK_6_RESULTS_DIR, 'final_pipe.pkl')
 
-RDF_FORMATS = {'json-ld', 'n3', 'rdf/xml', 'turtle'}
+RDF_FORMATS = {'json-ld', 'n3', 'xml', 'turtle'}
 OUTPUT_FORMATS = RDF_FORMATS | {'csv', 'json'}
 
 def create_git_graph(git_df, repos, topics):
@@ -99,7 +100,7 @@ def _write_csv_contents(csvwriter, git_df, repos, topics):
         repo_id = git_df.loc[idx]['gh_id']
         csvwriter.writerow({
             'repo_id': repo_id,
-            'topics': ' - '.join([(str(t), t.score) for t in repo_topics])
+            'topics': ' - '.join([str(t) for t in repo_topics])
         })
 
 def _write_json_contents(res, out_file):
