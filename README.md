@@ -54,8 +54,8 @@ Several scripts are provided in the _scripts_ folder to execute the systems and 
 The script _run_track_predictions.py_ can be used to obtain at once all the topics assigned to every repository from the dataset. The following parameters can be passed to the script:
 | Name | Description | Compulsory | Allowed Values |
 | ---- | ----------- | ---------- | ------ |
-| -o --output | Output format of the results. If no output format is specified, results are returned in JSON by default. | No | One of _csv_, _json_, _jsonld_, _n3_, _rdf/xml_ or _ttl_ |
-| -f --format | Name of the file where the results will be saved. If no output file is specified, results will be written to the console instead. | No | Any valid filename. |
+| -f --format | Output format of the results. If no output format is specified, results are returned in JSON by default. | No | One of _csv_, _json_, _jsonld_, _n3_, _rdf/xml_ or _ttl_ |
+| -o --output | Name of the file where the results will be saved. If no output file is specified, results will be written to the console instead. | No | Any valid filename. |
 
 For more additional information about how to run the script, you can execute the following command:
 ```bash
@@ -75,8 +75,8 @@ The script _predict_repo.py_ can be used to obtain the topics for a given protoc
 | input | Url of the GitHub repository to extract the topics from. If the --file flag is set, file with the urls of the GitHub repositories. | __Yes__ | Any GitHub url or file. |
 | --isFile | If present, this flag indicates that the input passed to the script is a file with the urls of each repository delimited by newlines. | No | True or False |
 | --token | itHub token used to fetch information about the input repositories before the topic extraction steps. | No | Github tokens |
-| -o --output | Output format of the results. If no output format is specified, results are returned in JSON by default. | No | One of _csv_, _json_, _jsonld_, _n3_ or _ttl_ |
-| -f --format | Name of the file where the results will be saved. If no output file is specified, results will be written to the console instead. | No | Any valid filename. |
+| -f --format | Output format of the results. If no output format is specified, results are returned in JSON by default. | No | One of _csv_, _json_, _jsonld_, _n3_ or _ttl_ |
+| -o --output | Name of the file where the results will be saved. If no output file is specified, results will be written to the console instead. | No | Any valid filename. |
 
 For more additional information about how to run the script, you can execute the following command:
 ```bash
@@ -87,6 +87,41 @@ In the following example, we will be running the script twice. The first executi
 ```bash
 python scripts/predict_protocol.py https://github.com/cmungall/LIRICAL/
 python scripts/predict_protocol.py scripts/test.txt --isFile -o results.ttl -f ttl
+```
+
+## Using the demo API
+An API has been deployed at http://hercules-challenge.weso.computing.network where the different functionality of the system can be tested out without needing to manually run the scripts with Python.
+
+For the Git track, we provide the __api/git/topics__ GET endpoint to predict the topics of a given GitHub repository. The following parameters can be sent in the JSON body:
+| Name | Description | Compulsory | Allowed Values |
+| ---- | ----------- | ---------- | ------ |
+| input | Url of the GitHub repository to extract the topics from. | __Yes__ | Any GitHub url. |
+| token | itHub token used to fetch information about the input repositories before the topic extraction steps. | No | Github tokens |
+| format | Output format of the results. If no output format is specified, results are returned in JSON by default. | No | One of _json_, _jsonld_, _n3_ or _ttl_ |
+
+An example body passed to the API could be as follows:
+```json
+{
+  "input": "https://github.com/cmungall/LIRICAL/",
+  "token": "GITHUB_TOKEN_HERE",
+  "format": "ttl"
+}
+```
+
+The response will be as follows:
+```json
+{
+  "task_id": "YOUR_TASK_ID"
+}
+```
+
+A task identifier will be returned. We can query the __api/prediction/<task_id>__ endpoint to get the status of our task. When the task is finished, we will get a result like the following one:
+```json
+{
+   "result":"{'216602979': {'source_url': 'https://www.github.com/cmungall/LIRICAL', 'author': 'cmungall', 'name': 'LIRICAL', 'languages': {'Java': 492423, 'FreeMarker': 13149, 'Python': 849}, 'topics': [{'labels': {'en': 'computer science', 'es': 'ciencias de la computación'}, 'external_ids': ['https://www.wikidata.org/w/Q21198', 'https://freebase.toolforge.org//m/01mkq', 'https://www.jstor.org/topic/computer-science-education', 'https://academic.microsoft.com/v2/detail41008148', 'http://vocabularies.unesco.org/thesaurus/concept450'], 'descriptions': {'en': 'study of the theoretical foundations of computation', 'es': 'ciencia dedicada a la computación y al proceso de información'}, 'score': 0.21895332390381894}, {'labels': {'en': 'software', 'es': 'software'}, 'external_ids': ['https://www.wikidata.org/w/Q7397', 'https://id.ndl.go.jp/auth/ndlsh/00684642', 'https://freebase.toolforge.org//m/01mf0', 'https://www.jstor.org/topic/computer-software', 'https://meshb.nlm.nih.gov/record/ui?ui=D012984', 'https://academic.microsoft.com/v2/detail2777904410', 'http://vocabularies.unesco.org/thesaurus/concept6081'], 'descriptions': {'en': 'non-tangible executable component of a computer', 'es': 'equipamiento lógico o soporte lógico de un sistema informático'}, 'score': 0.2180281690140845}, {'labels': {'en': 'artificial intelligence', 'es': 'inteligencia artificial'}, 'external_ids': ['https://www.wikidata.org/w/Q11660', 'https://id.ndl.go.jp/auth/ndlsh/00574798', 'https://freebase.toolforge.org//m/0mkz', 'https://meshb.nlm.nih.gov/record/ui?ui=D001185', 'https://www.jstor.org/topic/artificial-intelligence', 'http://vocabularies.unesco.org/thesaurus/concept3052', 'http://id.nlm.nih.gov/mesh/G17.035.250', 'http://id.nlm.nih.gov/mesh/L01.224.050.375', 'https://academic.microsoft.com/v2/detail154945302'], 'descriptions': {'en': 'intelligence demonstrated by machines, in contrast to the natural intelligence displayed by humans and animals', 'es': 'rama de la informática que desarrolla máquinas y software con inteligencia similar a la humana'}, 'score': 0.21228743828853539}, {'labels': {'en': 'interaction science', 'es': ''}, 'external_ids': ['https://www.wikidata.org/w/Q97008347'], 'descriptions': {'en': 'scientific discipline', 'es': ''}, 'score': 0.21164889253486463}, {'labels': {'en': 'engineering', 'es': 'ingeniería'}, 'external_ids': ['https://www.wikidata.org/w/Q11023', 'https://id.ndl.go.jp/auth/ndlsh/00566144', 'https://freebase.toolforge.org//m/02ky346', 'https://www.jstor.org/topic/engineering', 'http://vocabularies.unesco.org/thesaurus/concept623', 'http://uri.gbv.de/terminology/bk/5', 'https://meshb.nlm.nih.gov/record/ui?ui=D004738', 'http://id.nlm.nih.gov/mesh/J01.293', 'https://academic.microsoft.com/v2/detail127413603'], 'descriptions': {'en': 'applied science', 'es': 'ciencia aplicada'}, 'score': 0.21032608695652175}, {'labels': {'en': 'automation', 'es': 'automatización'}, 'external_ids': ['https://www.wikidata.org/w/Q184199', 'https://freebase.toolforge.org//m/017cmr', 'http://vocabularies.unesco.org/thesaurus/concept3401', 'https://meshb.nlm.nih.gov/record/ui?ui=D001331', 'https://academic.microsoft.com/v2/detail115901376', 'https://academic.microsoft.com/v2/detail167123822'], 'descriptions': {'en': 'use of various control systems for operating equipment', 'es': 'uso de sistemas o elementos computerizados y electromecánicos para controlar maquinarias o procesos industriales'}, 'score': 0.2096424702058505}, {'labels': {'en': 'statistics', 'es': 'estadística'}, 'external_ids': ['https://www.wikidata.org/w/Q12483', 'https://id.ndl.go.jp/auth/ndlsh/00573173', 'https://freebase.toolforge.org//m/06mnr', 'https://www.jstor.org/topic/statistics', 'https://meshb.nlm.nih.gov/record/ui?ui=D020500', 'https://meshb.nlm.nih.gov/record/ui?ui=D013223', 'http://id.nlm.nih.gov/mesh/V02.925', 'http://id.nlm.nih.gov/mesh/E05.318.740', 'http://id.nlm.nih.gov/mesh/H01.548.832', 'http://id.nlm.nih.gov/mesh/N05.715.360.750', 'http://id.nlm.nih.gov/mesh/N06.850.520.830', 'https://academic.microsoft.com/v2/detail105795698', 'http://vocabularies.unesco.org/thesaurus/concept119', 'http://vocabularies.unesco.org/thesaurus/concept2238'], 'descriptions': {'en': 'study of the collection, organization, analysis, interpretation, and presentation of data', 'es': 'estudio de la recolección, organización, análisis, interpretación y presentación de los datos'}, 'score': 0.2094722598105548}]}}",
+   "task_status":"Finished"
+}
+
 ```
 
 ## Results obtained
